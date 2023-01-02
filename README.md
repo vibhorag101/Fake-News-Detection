@@ -1,5 +1,5 @@
 # Fake News Detection using NLP, Machine Learning and Deep Learning.
-## Motivation (Abstract)
+## Motivation
 In the recent years of information transfer we have seen
 how major shortcomings in the field of technology have
 affected the lives of the people. The times of social media
