@@ -44,7 +44,7 @@ The following steps need to be perfomed :
 
 
 ### File Structure  
-- `Final_Code.ipynb` -> Jupyter Notebook with ML Model  
+- `FakeNewsDetectionModel.ipynb` -> Jupyter Notebook with ML Model  
 - `Validation_date.tsv` , `test_data.tsv` and `train_data.tsv`  -> Dataset
 - `Project Report` - Report specifying the project
 - `Project Presentation.pptx` - Project Presentation for Project Explanation.
