@@ -16,6 +16,41 @@ transfer of incorrect news in places. So all in all our group
 wants to contribute in ensuring peace and sanity by
 identifying which is fake and real news through the use of
 Machine Learning Concepts.
+
+## The Team 😀
+All of us are CS undergrads at `IIIT Delhi`
+- Vibhor Agarwal
+- Anshak Goel
+- Sahil Goyal
+- Deeptorshi Mondal
+
+## Project Report 📙📙
+Here find the most detailed [`Report`](https://drive.google.com/open?id=1yBlkQaVJxG0riSf9CZx9cdPofywFHLts&authuser=vibhor20349%40iiitd.ac.in&usp=drive_fs) and [`Presentation`](https://www.canva.com/design/DAFTuA_cjDY/3njYoH-d8q1PmnpqMOQZvQ/view?utm_content=DAFTuA_cjDY&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent) you will ever get. It has even the most minute details of our project. They contain our motivation, methodology, results and future work.
+
+## Dataset and Publications Used
+- The data is obtained from the following   [`dataset`](https://paperswithcode.com/dataset/liar). This contains a decade-long of 12.8K manually labeled short statements were collected in various contexts from POLITIFACT.COM, which provides detailed analysis report and links to source documents for each case.
+- [`“Liar, Liar Pants on Fire”:
+A New Benchmark Dataset for Fake News Detection`](https://arxiv.org/pdf/1705.00648.pdf%E2%80%8B) and  [ `Fake News Detection Using Machine Learning approaches: A systematic Review`](https://www.researchgate.net/publication/336436870_Fake_News_Detection_Using_Machine_Learning_approaches_A_systematic_Review) helped me understand the problem and get a understanding of the topic.
+
+## Goals of the Project
+This clearly is a `binary classification problem` where we need to classify a news article or statement as Fake or not.
+The following steps need to be perfomed :  
+1. Data Preprocessing. We split the data to 70:15:15 for training, testing and validation sets.
+2. We run `Decision trees` with different ***(depths)*** from 4 to 20 along with GINI Gain and Entropy criteria. We check which of the depth and criteria combination gives the best accuracy on the testing set.
+3. We do ensembling by training weak decision tree classifiers with depth=3 on 50% data. We take 100 such classifiers and then take the majority vote. This actually forms our `random forest`
+4. We now using Adaboost boosting technique to try to improve performance of our chosen Decision Tree in Part 2 for different values of n estimators from 4 to 20.
+5. We use `Logistic Regression` and `SVM` for fake news classification.
+6. We use `Artificial Neural Networks` for fake news classification
+
+
+### File Structure  
+- `Final_Code.ipynb` -> Jupyter Notebook with ML Model  
+- `Validation_date.tsv` , `test_data.tsv` and `train_data.tsv`  -> Dataset
+- `Project Report` - Report specifying the project
+- `Project Presentation.pptx` - Project Presentation for Project Explanation.
+
+
+
 ## 1. INTRODUCTION TO THE PROBLEM STATEMENT
 Though, technology has been the reason for the recent
 positive developments in the human history it also has had
